@@ -7,3 +7,7 @@
 ----
 ### Module 3 solution: 
 #### https://cwill304.github.io/JHU.605.787/module3-solution/index.html
+ 
+----
+### Module 4 solution: 
+#### https://cwill304.github.io/JHU.605.787/module4-solution/index.html
