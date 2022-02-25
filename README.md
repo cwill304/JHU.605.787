@@ -11,3 +11,7 @@
 ----
 ### Module 4 solution: 
 #### https://cwill304.github.io/JHU.605.787/module4-solution/index.html
+
+----
+### Module 5 solution: 
+#### https://cwill304.github.io/JHU.605.787/module5-solution/index.html
