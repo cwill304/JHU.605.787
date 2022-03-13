@@ -19,3 +19,7 @@
 ----
 ### Module 6 solution: 
 #### https://cwill304.github.io/JHU.605.787/module6-solution/index.html
+
+----
+### Module 7 solution: 
+#### https://cwill304.github.io/JHU.605.787/module6-solution/index.html
