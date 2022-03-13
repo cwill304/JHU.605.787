@@ -3,6 +3,7 @@
     angular.module("ShoppingListCheckOff", [])
     .controller("ToBuyController", ToBuyController)
     .controller("AlreadyBoughtController", AlreadyBoughtController)
+    .filter("customCurrency", CustomFilterFactory)
     .service("ShoppingListCheckOffService", ShoppingListCheckOffService);
 
     ToBuyController.$inject = ["ShoppingListCheckOffService"];
@@ -14,8 +15,8 @@
         }   
     }
 
-    AlreadyBoughtController.$inject = ["ShoppingListCheckOffService"];
-    function AlreadyBoughtController(ShoppingListCheckOffService) {
+    AlreadyBoughtController.$inject = ["ShoppingListCheckOffService", "customCurrencyFilter"];
+    function AlreadyBoughtController(ShoppingListCheckOffService, customCurrencyFilter) {
         var itemsAlreadyBought = this;
         itemsAlreadyBought.items = ShoppingListCheckOffService.getItemsAlreadyBought();
     }
@@ -49,6 +50,17 @@
 
         service.getItemsAlreadyBought = function() {
             return itemsAlreadyBought;
+        }
+    }
+
+    function CustomFilterFactory() {
+        return function (input) {
+            if (isNaN(input)) {
+                return " - invalid quantity entered";
+            }
+            else {
+                return ["$$$", input.toFixed(2)].join("");
+            }
         }
     }
 })();
