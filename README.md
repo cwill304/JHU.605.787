@@ -22,4 +22,4 @@
 
 ----
 ### Module 7 solution: 
-#### https://cwill304.github.io/JHU.605.787/module6-solution/index.html
+#### https://cwill304.github.io/JHU.605.787/module7-solution/index.html
