@@ -1,0 +1,9 @@
+<h3>Results</h3>
+<ul>
+  <li ng-repeat="item in menu.found">
+    {{ item.short_name }} , {{ item.name }} , {{item.description}}
+    <!--<button ng-click="list.badRemove($index);">Bad Remove Item</button>-->
+    <button ng-click="menu.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ul>
+<div class="error" ng-if="menu.found.length === 0">Nothing found</div>
