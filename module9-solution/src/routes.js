@@ -1,7 +1,7 @@
 (function () {
 'use strict';
 
-angular.module('ShoppingList')
+angular.module('MenuApp')
 .config(RoutesConfig);
 
 RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
@@ -40,7 +40,6 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
             function ($stateParams, ShoppingListService) {
               return ShoppingListService.getItems()
                 .then(function (items) {
-                  console.log($stateParams);
                   return items[$stateParams.itemId];
                 });
             }]

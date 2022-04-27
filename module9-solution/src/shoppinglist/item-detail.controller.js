@@ -1,16 +1,11 @@
 (function () {
 'use strict';
 
-angular.module('ShoppingList')
+angular.module('MenuApp')
 .controller('ItemDetailController', ItemDetailController);
-
-// 'item' is injected through state's resolve
 ItemDetailController.$inject = ['$http', 'item']
 function ItemDetailController($http, item) {
   var itemDetail = this;
-  //https://davids-restaurant.herokuapp.com/categories/83.json
-  console.log(item);
-  console.log(this);
   var response = $http({
     method: "GET",
     url: "https://davids-restaurant.herokuapp.com/categories/" + item.id + ".json"
