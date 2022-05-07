@@ -31,3 +31,7 @@
 ----
 ### Module 9 solution: 
 #### https://cwill304.github.io/JHU.605.787/module9-solution/index.html
+
+----
+### Module 10 solution: 
+#### https://cwill304.github.io/JHU.605.787/module10-solution/index.html
