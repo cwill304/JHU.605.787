@@ -1,0 +1,26 @@
+<div class="container">
+    <h2 class="text-center">User Information</h2>
+    <div ng-if="MyInfoCtrl.hasUser()">
+        <div class="text-center">
+            Full Name: {{ MyInfoCtrl.displayUser.firstName}} {{ MyInfoCtrl.displayUser.lastName}}
+        </div>
+        <div class="text-center">
+            Email: {{ MyInfoCtrl.displayUser.email}}
+        </div>
+        <div class="text-center">
+            Phone Number: {{ MyInfoCtrl.displayUser.phone}}
+        </div>
+        <div class="text-center">
+            Favorite Item: {{ MyInfoCtrl.displayUser.favItem}}
+        </div>
+        <div class="text-center">
+            Item Name: {{ MyInfoCtrl.displayUser.itemName}}
+        </div>
+        <div class="text-center">
+            Item Description: {{ MyInfoCtrl.displayUser.itemDescription}}
+        </div>
+        <img class="img-responsive" width="250" height="150" ng-src="https://cwill-mod10.herokuapp.com/images/{{MyInfoCtrl.displayUser.favItem}}.jpg" alt="{{MyInfoCtrl.displayUser.itemName}}">
+    </div>
+    <div ng-if="!MyInfoCtrl.hasUser()">Not Signed Up Yet. <a ui-sref="public.sign-up">Sign up Now!</a></div>
+  </div>
+  
