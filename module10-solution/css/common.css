@@ -18,3 +18,7 @@
 .ui-view-placeholder {
     margin-top: 60px;
 }
+
+input {
+    color: black;
+}
