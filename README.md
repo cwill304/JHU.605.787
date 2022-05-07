@@ -27,3 +27,7 @@
 ----
 ### Module 8 solution: 
 #### https://cwill304.github.io/JHU.605.787/module8-solution/index.html
+
+----
+### Module 9 solution: 
+#### https://cwill304.github.io/JHU.605.787/module9-solution/index.html
